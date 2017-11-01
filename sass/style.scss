@@ -1,0 +1,88 @@
+/* Front End Widget Styling */
+
+/* styling for the list of tab titles */
+#rpg_menu_tabs { 
+	margin: 10px 0 0 10px;
+
+	ul { 
+		list-style:none; 
+		li {
+			display:inline; 
+			float:left; 
+			margin-bottom:0;
+			border: 3px ridge #636363;
+
+			&.rpg_tab_active {
+				background: rgba(200,200,200,0.8) !important;
+			}
+
+			a {
+				padding:5px; 
+				background: rgba(220,220,220,0.3); 
+				text-decoration: none; 
+				font: bold 14px Helvetica, Sans-Serif;
+				letter-spacing: -1px;
+				color: #402e16;
+
+				&:hover {
+				   background: -webkit-gradient(
+				      linear, right bottom, left top, color-stop(0, rgb(220,220,220)), color-stop(0.72, rgb(200,200,200))) !important;
+				   background: -moz-linear-gradient(
+				      right bottom, rgb(220,220,220) 0%, rgb(200,200,200) 72%) !important;
+				   background-color: rgb(220,220,220) !important;
+				   -moz-opacity:.90; 
+				   filter:alpha(opacity=90); 
+				   opacity:.90;		
+				   color: #FFF;
+				}
+
+			}
+
+		}
+	}
+}
+
+/* styling for the list of links under the tabs */
+#rpg_main_tabs {
+	clear: both; 
+	background: rgba(200,200,200,0.8); 
+	width: 100%; 
+	margin-left:10px; 
+	margin-right:10px;
+	padding: 5px;
+	-moz-border-radius-topright: 12px; 
+	-moz-border-radius-bottomright: 12px; 
+	-moz-border-radius-bottomleft: 12px;
+   -webkit-border-top-right-radius:12px; -webkit-border-bottom-right-radius:12px; -webkit-border-bottom-left-radius:12px;
+
+   p {
+   	font: bold 14px Helvetica, Sans-Serif;
+   	margin: 0;
+	   a {
+	   	color: #636363;
+	   	display: none;
+	   	text-decoration: none;
+	   		&.rpg_link_active {
+				display: block;
+			}  
+			&:hover {
+				text-decoration: underline;
+				color: #FFF;
+			} 	
+	   }
+   }
+
+   h3 {
+   	font: bold 18px Helvetica, Sans-Serif;
+   	margin-top: 10px;
+   	margin-bottom: 5px;
+   	a {
+   		color: #636363;
+		&:hover {
+			cursor: default;
+		} 	
+   	}
+   }
+
+
+}
