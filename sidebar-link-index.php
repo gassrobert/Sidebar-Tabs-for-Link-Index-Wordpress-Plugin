@@ -180,7 +180,7 @@ public function widget($args, $instance)
 			if (isset(${'title' . $numOfTabs})) {
 					$title = apply_filters('widget-title', ${'title' . $numOfTabs});
 ?>
-				<li <?php echo ( $numOfTabs == 0 ) ? 'class="rpgTabTitle rpg_tab_active"' : 'class="rpgTabTitle rpg_tab_' . $numOfTabs . '"'; ?> ><a href="#"><?php echo $title; ?></a></li>
+				<li <?php echo ( $numOfTabs == 0 ) ? 'class="rpgTabTitle rpg_tab_active"' : 'class="rpgTabTitle rpg_tab_' . $numOfTabs . '"'; ?> ><a href="#"><?php echo esc_attr($title); ?></a></li>
 <?php
 			} // End of if (isset(${'title' . $numOfTabs})) {
 		} // End of for ($numOfTabs
@@ -205,7 +205,7 @@ public function widget($args, $instance)
 							if (!empty($link_name) && !empty($link_url)) {
 	?>
 								<!-- Display the link name in an anchor pointing to the saved link URL -->
-								<?php if ($link_url != "#" && $rpg_link_num == 0) { echo '<p style="margin-top: 10px;">'; } else if ($link_url != "#") { echo "<p>"; } else { echo "<h3>"; } ?><a href="<?php echo $link_url; ?>" <?php echo ( $numOfTabs == 0 ) ? 'class="rpg_link_active" style="display: block;"' : 'class="rpg_link_' . $numOfTabs . '" style="display: none;"'; ?>><?php echo $link_name; ?></a><?php echo ($link_url != "#") ? "</p>" : "</h3>"; ?>
+								<?php if ($link_url != "#" && $rpg_link_num == 0) { echo '<p style="margin-top: 10px;">'; } else if ($link_url != "#") { echo "<p>"; } else { echo "<h3>"; } ?><a href="<?php echo esc_attr($link_url); ?>" <?php echo ( $numOfTabs == 0 ) ? 'class="rpg_link_active" style="display: block;"' : 'class="rpg_link_' . $numOfTabs . '" style="display: none;"'; ?>><?php echo esc_attr($link_name); ?></a><?php echo ($link_url != "#") ? "</p>" : "</h3>"; ?>
 	<?php
 							} // End of if (!empty($link_name) && !empty($link_url)) {
 						} // End of for ($rpg_link_num
