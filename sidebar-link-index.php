@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Sidebar Tabs for Link Index
- * Plugin URI: http://robert-paul-gass-portfolio.co.nf/?p=194
+ * Plugin URI: http://robert-paul-gass-portfolio.co.nf
  * Description: Organizes Links into Tabs to Create Indexes
  * Author: Robert Paul Gass
  * Author URI: http://robert-paul-gass-portfolio.co.nf/
