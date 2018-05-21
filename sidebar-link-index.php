@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Sidebar Tabs for Link Index
- * Plugin URI: http://robert-paul-gass-portfolio.co.nf/
+ * Plugin URI: http://robert-paul-gass-portfolio.co.nf/?p=194
  * Description: Organizes Links into Tabs to Create Indexes
  * Author: Robert Paul Gass
  * Author URI: http://robert-paul-gass-portfolio.co.nf/
@@ -150,7 +150,6 @@ class RPG_Sidebar_Tabs_Link_Index extends WP_Widget {
 		<br>
 		<?php
 	}
-
 
 // This is the Widget Form displayed in the sidebar to the user
 public function widget($args, $instance)
